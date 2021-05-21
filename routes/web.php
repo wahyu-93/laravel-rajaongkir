@@ -16,3 +16,5 @@
 // });
 
 Route::get('/ongkir', 'CheckOngkirController@index')->name('ongkir.index');
+Route::post('/ongkir', 'CheckOngkirController@check_ongkir')->name('ongkir.check_ongkir');
+Route::get('/cities/{province_id}', 'CheckOngkirController@getCities')->name('cities');
